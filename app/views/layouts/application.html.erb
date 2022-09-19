@@ -11,19 +11,12 @@
   </head>
 
   <body>
-    <header>
-      <h1> <%= image_tag('logo') %> </h1>
-    </header>
+    <%= render "layouts/header" %>
     
     <div class="content">
       <%= yield %>
     <div>
   
-    <footer> 
-      <p> 
-        Copyright &copy; 2022-<%=Time.now.year%>
-        Jack's Studio
-        </p>
-    </footer>
+    <%= render "layouts/footer" %>
   </body>
 </html>
